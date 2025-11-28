@@ -19,7 +19,7 @@ export default function Contact() {
                 className='h-[250px] sm:h-[400px] md:h-[485px] w-[300px] sm:w-[480px] object-cover rounded-t-lg md:rounded-r-lg relative' />
             </aside>
             {/*Contact Form*/}
-            <section className='w-full p-8 md:w-1/2'>
+            <section id='contact' className='w-full p-8 md:w-1/2'>
                 <header className='mb-6'>
                     <h2 className='text-4xl font-bold text-center text-white'>Contact Us</h2>
                 </header>

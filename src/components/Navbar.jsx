@@ -9,6 +9,7 @@ export default function Navbar() {
     {id:2,name:'About',link:'#about'},
     {id:3,name:'Skills',link:'#skills'},
     {id:4,name:'My projects',link:'#projects'},
+    {id:5,name:'Contact',link:'#contact'},
     
   ];
   return (
@@ -25,18 +26,15 @@ export default function Navbar() {
         {/*Desktop Navigation*/}
         <nav className='items-center hidden md:flex space-x-7'>
           {NavbarLinks.map((link)=>(
-            <a key={link.id} href={link.link} className='text-lg hover:text-gray-200'>{link.name}</a>
+            <a key={link.id} href={link.link} className='text-lg hover:text-orange-500'>{link.name}</a>
           ))}
-          <button className='inline-flex px-6 py-2 text-lg text-white border-2 rounded-full focus:outline-none hover:bg-purple-800'>
-            {""}
-            Contact{""}
-          </button>
+          
         </nav>
       </div>
 
         {/* Mobile Navigation */}
         <div
-        className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-[#801b9c] absolute top-0 left-0 w-full h-screen flex flex-col items-center justify-center space-y-8 pt-16`}
+        className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-[#ea580c] absolute top-0 left-0 w-full h-screen flex flex-col items-center justify-center space-y-8 pt-16`}
         >
         {/* Close Button */}
         <button className='absolute text-white top-5 right-5' onClick={()=>setIsOpen(false)}>
@@ -48,8 +46,7 @@ export default function Navbar() {
             onClick={()=>setIsOpen(false)}
             >{link.name}</a>
         ))}
-        {/* Contact Button */}
-        <button className='inline-flex px-6 py-2 text-lg text-white border-2 rounded-full focus:outline-none hover:bg-purple-800'>Contact</button>
+        
         </div>
     </header>
   );
