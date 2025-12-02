@@ -1,21 +1,21 @@
 import React from 'react';
-import proj1 from '/proj1.png';
+import Cashless from '/Cashless.png';
 import proj2 from '/proj2.png';
 import proj3 from '/proj3.png';
 
 
 const listProjects = [
   {
-    image: proj1,
-    title: 'Portfolio Website 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    link: '',
+    image: Cashless,
+    title: 'Cashless Transaction using RFID in Point of Sales',
+    description: 'To develop a cashless RFID-based POS system that enables secure, contactless payments, reduces transaction time and errors, and improves overall retail efficiency.',
+    link: 'https://www.canva.com/design/DAG6W8atlH0/irUyypK4BGC9OqWVK3bzoA/edit?utm_content=DAG6W8atlH0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
   },
   {
     image: proj2,
     title: 'Portfolio Website 2',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    link: '',
+    link: 'https://react-weather-khaki-iota.vercel.app/',
   },
   {
     image: proj3,
@@ -23,12 +23,7 @@ const listProjects = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
     link: '',
   },
-   {
-    image: proj1,
-    title: 'Portfolio Website 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    link: '',
-  },
+   
   {
     image: proj2,
     title: 'Portfolio Website 2',
@@ -47,7 +42,7 @@ const ProjectCard = ({ image, title, description, link }) => {
   return (
     <article className='relative max-w-sm overflow-hidden bg-gray-800 rounded shadow-lg group'>
       
-      <div className='absolute z-0 w-40 h-40 sm:w-60 sm:h-60 bg-[#cd3cf5] rounded-full blur-3xl opacity-50 -top-5 left-10'></div>
+      <div className='absolute z-0 w-40 h-40 bg-orange-700 rounded-full opacity-50 sm:w-60 sm:h-60 blur-3xl -top-5 left-10'></div>
 
       <div className='relative z-10'>
         <figure className='relative'>
@@ -60,9 +55,9 @@ const ProjectCard = ({ image, title, description, link }) => {
             href={link}
             target='_blank'
             rel='noopener noreferrer'
-            className='absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-purple-800 bg-opacity-50 opacity-0 group-hover:opacity-100'
+            className='absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-orange-800 bg-opacity-50 opacity-0 group-hover:opacity-100'
           >
-            <button className='bg-white font-medium text-black py-2 px-4 rounded-3xl shadow hover:text-white hover:bg-[#2879d5]'>
+            <button className='px-4 py-2 font-medium text-black bg-white shadow rounded-3xl hover:text-white hover:bg-orange-600'>
               Live Preview
             </button>
           </a>
@@ -85,7 +80,7 @@ export default function Projects() {
       <section  data-aos='fade-up' data-aos-delay='300'>
         <header className='text-center'>
           <h1 className='mb-6 text-3xl font-bold text-white sm:text-4xl'>
-            My <span className='text-purple-400'>Projects</span>
+            My <span className='text-orange-500'>Projects</span>
           </h1>
           <p className='mt-2 text-sm text-gray-400 sm:mt-4 sm:text-base'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repudiandae reiciendis pariatur autem.

@@ -13,7 +13,7 @@ export default function TextType({
   const [isDeleting, setIsDeleting] = useState(false);
   const [showCursorBlink, setShowCursorBlink] = useState(true);
 
-  // Typing effect
+  
   useEffect(() => {
     const currentText = text[textIndex];
     let timer;
@@ -25,7 +25,7 @@ export default function TextType({
           setCharIndex(charIndex + 1);
         }, typingSpeed);
       } else {
-        // Pause before deleting
+        
         timer = setTimeout(() => {
           setIsDeleting(true);
         }, pauseDuration);
@@ -37,7 +37,7 @@ export default function TextType({
           setCharIndex(charIndex - 1);
         }, typingSpeed / 2);
       } else {
-        // Move to next text
+        
         setIsDeleting(false);
         setTextIndex((prev) => (prev + 1) % text.length);
       }
@@ -46,7 +46,7 @@ export default function TextType({
     return () => clearTimeout(timer);
   }, [charIndex, textIndex, isDeleting, text, typingSpeed, pauseDuration]);
 
-  // Cursor blink effect
+ 
   useEffect(() => {
     if (!showCursor) return;
 
