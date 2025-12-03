@@ -1,5 +1,6 @@
 import React from 'react';
 import Cashless from '/Cashless.png';
+import weatherapp from '/weatherapp.png';
 import proj2 from '/proj2.png';
 import proj3 from '/proj3.png';
 
@@ -8,13 +9,13 @@ const listProjects = [
   {
     image: Cashless,
     title: 'Cashless Transaction using RFID in Point of Sales',
-    description: 'To develop a cashless RFID-based POS system that enables secure, contactless payments, reduces transaction time and errors, and improves overall retail efficiency.',
+    description: 'Laravel/Blade 9, Tailwind CSS, MySQL,  JavaScript, Bootstrap, XAMPP.',
     link: 'https://www.canva.com/design/DAG6W8atlH0/irUyypK4BGC9OqWVK3bzoA/edit?utm_content=DAG6W8atlH0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
   },
   {
-    image: proj2,
-    title: 'Portfolio Website 2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    image: weatherapp,
+    title: 'Weather App',
+    description: 'React.js,Vite, Tailwind CSS, Weather API',
     link: 'https://react-weather-khaki-iota.vercel.app/',
   },
   {
