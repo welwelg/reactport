@@ -18,11 +18,11 @@ export default function About() {
       {/* Main Content Container */}
       <div className="container flex flex-col items-center justify-center flex-grow gap-8 px-6 py-12 mx-auto lg:py-0 lg:grid lg:grid-cols-2 lg:gap-16 xl:gap-24 max-w-7xl">
         
-        {/* Left Side: Image (Order 1 on Mobile, Col 1 on Desktop) */}
+        {/* Left Side */}
         <figure 
           data-aos='fade-right' 
           data-aos-delay='500'
-          // Added max-w-md and mx-auto to center it perfectly on mobile
+        
           className='relative flex flex-col items-center justify-center order-1 w-full max-w-md mx-auto mb-10 lg:order-1 lg:max-w-full lg:mx-0 lg:mb-0'
         >
           <TiltedCard
@@ -48,14 +48,13 @@ export default function About() {
           />
         </figure>
         
-        {/* Right Side: Article (Order 2 on Mobile, Col 2 on Desktop) */}
+        {/* Right Side */}
         <article 
-          data-aos='fade-left' // Changed fade direction for variety
+          data-aos='fade-left' 
           data-aos-delay='500' 
-          // Text centered on mobile, Left aligned on Large screens
           className='relative order-2 w-full text-center lg:text-left lg:order-2'
         >
-          {/* Background Blob: Centered on mobile, offset on desktop */}
+          {/* Background Blob*/}
           <div className='absolute z-0 w-40 h-40 transform -translate-x-1/2 rounded-full opacity-50 bg-orange-950 sm:w-60 sm:h-60 blur-3xl -top-10 left-1/2 lg:left-10 lg:translate-x-0'></div>
           
           <header className='relative z-10 mt-12 lg:mt-0'>
@@ -80,14 +79,14 @@ export default function About() {
       {/* Footer Section */}
       <footer
         className="relative w-full mt-auto bg-gradient-to-t to-transparent" 
-        style={{ height: '120px', overflow: 'hidden'}} // Slightly reduced height for mobile
+        style={{ height: '120px', overflow: 'hidden'}} 
       >
         <div className="flex items-center h-full">
             <LogoLoop
             logos={techLogos}
             speed={120}
             direction="left"
-            logoHeight={40} // Smaller logo on mobile usually looks cleaner
+            logoHeight={40} 
             gap={40}
             hoverSpeed={0}
             scaleOnHover

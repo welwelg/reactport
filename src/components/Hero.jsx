@@ -37,7 +37,7 @@ export default function Hero() {
           <header>
             <div className="mb-4 text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl">
               <TrueFocus
-                sentence="Wel Tech Code"
+                sentence="Rogelio F. Gallardo"
                 manualMode={false}
                 blurAmount={5}
                 borderColor="#f97316"

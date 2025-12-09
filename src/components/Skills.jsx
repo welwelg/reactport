@@ -81,7 +81,8 @@ export default function Skills() {
       {/* Main Card Container */}
       <div className="relative z-10 w-full max-w-6xl">
         {/* Header */}
-        <div className="mb-6 text-center sm:mb-8 md:mb-10">
+        <div
+        data-aos='fade-down' data-aos-delay='300' className="mb-6 text-center sm:mb-8 md:mb-10">
           <h1 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl lg:text-5xl">
             My Expertise<br />and <span className="text-orange-500">Skills</span>
           </h1>
@@ -91,7 +92,8 @@ export default function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7">
+        <div 
+        data-aos='fade-up' data-aos-delay='300' className="grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7">
           {skillsData.map((skill) => (
             <SkillCard key={skill.text} skill={skill} />
           ))}

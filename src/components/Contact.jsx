@@ -67,6 +67,8 @@ export default function Contact() {
 
   return (
     <section
+    data-aos="fade-in"
+      data-aos-delay="500"
       id="contact"
       className="relative flex items-center justify-center min-h-screen px-4 py-12 overflow-hidden bg-gray-950"
     >
@@ -80,26 +82,51 @@ export default function Contact() {
       <article className="relative z-10 flex flex-col w-full max-w-5xl overflow-hidden bg-gray-900 shadow-2xl rounded-2xl md:flex-row">
         {/* Image Side */}
         <aside className="relative w-full h-64 md:w-1/2 md:h-auto bg-gradient-to-br from-orange-500 to-orange-700">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center text-white">
-              <svg
-                className="w-24 h-24 mx-auto mb-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-              <p className="text-xl font-bold">Get In Touch</p>
-            </div>
-          </div>
-        </aside>
+  <div className="absolute inset-0 flex items-center justify-center">
+    <div className="p-4 text-center text-white">
+      <svg
+        className="w-24 h-24 mx-auto mb-4"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
+      </svg>
+      <p className="mb-2 text-xl font-bold">Get In Touch</p>
+      
+      {/* --- Contact Details and TikTok Added Here --- */}
+      <div className="space-y-1">
+        <a 
+          href="mailto:your.email@example.com" 
+          className="block text-lg transition-colors hover:underline"
+        >
+          welwelgallardo.business@gmail.com
+        </a>
+        <a 
+          href="tel:+15551234567" 
+          className="block text-lg transition-colors hover:underline"
+        >
+          +63 991-0797-593
+        </a>
+        <a 
+          href="https://www.tiktok.com/@weltechcode24" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="block text-lg transition-colors hover:underline"
+        >
+          @weltechcode24
+        </a>
+      </div>
+      {/* ------------------------------------------- */}
 
+    </div>
+  </div>
+</aside>
         {/* Contact Form Side */}
         <section className="w-full p-6 sm:p-8 md:p-12 md:w-1/2">
           <header className="mb-8">
