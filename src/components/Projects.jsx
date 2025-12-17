@@ -1,10 +1,9 @@
 import React from "react";
-// ... (Your imports remain the same)
 import Cashless from "/Cashless.png";
 import weatherapp from "/weatherapp.png";
 import coffeemenu from "/coffeemenu.png";
-import proj2 from "/proj2.png";
-import proj3 from "/proj3.png";
+import githubfinder from "/githubfinder.png";
+
 
 // ===================================
 // 1. PROJECT DATA (Structure remains the same as previous response)
@@ -22,7 +21,7 @@ const listProjects = [
   },
   {
     image: weatherapp,
-    title: "Weather App",
+    title: "Weather App : track weather in real-time",
     description: "React.js,Vite, Tailwind CSS, Weather API",
     live: "https://react-weather-khaki-iota.vercel.app/",
     github: "https://github.com/welwelg/react-Weather",
@@ -30,28 +29,23 @@ const listProjects = [
   },
   {
     image: coffeemenu,
-    title: "Coffee Menu",
-    description: "Laravel, React.js, Inertia, JavaScript/TypeScript, Tailwind CSS, MySQL, XAMPP",
-    live: "",
+    title: "Coffee Menu : add a coffee using links image or photos",
+    description: "Laravel, React.js, Inertia, JavaScript/TypeScript, Tailwind CSS, MySQL, XAMPP, Cloudinary",
+    live: "https://coffeemenu.onrender.com",
     github: "https://github.com/welwelg/CoffeeMenuUpdated",
     canva: "https://www.canva.com/design/DAG6dXd0nwA/YH92Dsocuy16Kfz4cg4-ng/edit?utm_content=DAG6dXd0nwA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
   },
   {
-    image: proj2,
-    title: "Portfolio Website 2",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    live: "",
-    github: "", 
-    canva: "",
-  },
-  {
-    image: proj3,
-    title: "Portfolio Website 3",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    live: "",
+    image: githubfinder,
+    title: "Github Finder : track or view your github account and other users",
+    description:"React.js, Vite, TailwindCSS",
+    live: "https://githubfinder-git-main-weltechcodes-projects.vercel.app/",
     github: "",
-    canva: "",
+    canva: "https://www.canva.com/design/DAG7vFaq_Mo/KRu1iSKljrHhxSgrIX1B8Q/edit?utm_content=DAG7vFaq_Mo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
   },
+  
+  
+  
 ];
 
 // ===================================
@@ -88,7 +82,7 @@ const ProjectCard = ({ image, title, description, live, github, canva }) => {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full max-w-[200px]" // Added max-width for better look
+                    className="w-full max-w-[200px]" 
                   >
                     <button
                       className={`w-full px-4 py-2 text-sm font-semibold rounded-full shadow-lg transition-colors duration-300
@@ -102,7 +96,7 @@ const ProjectCard = ({ image, title, description, live, github, canva }) => {
                 )
               )
             ) : (
-              // Case 2: Display "No Links" message
+              
               <p className="p-3 text-center text-white border rounded-lg bg-red-600/30 border-red-500/50">
                 No external links provided for this project.
               </p>
