@@ -3,6 +3,7 @@ import Cashless from "/Cashless.png";
 import weatherapp from "/weatherapp.png";
 import coffeemenu from "/coffeemenu.png";
 import githubfinder from "/githubfinder.png";
+import brgy from "/brgy.jpg";
 
 
 // ===================================
@@ -10,22 +11,14 @@ import githubfinder from "/githubfinder.png";
 //    Ensure you set missing links to an empty string ("")
 // ===================================
 const listProjects = [
+
   {
-    image: Cashless,
-    title: "Cashless Transaction using RFID in Point of Sales",
-    description:
-      "Laravel/Blade 9, Tailwind CSS, MySQL,  JavaScript, Bootstrap, XAMPP",
+    image: brgy,
+    title: "Barangay Management System ",
+    description:"Laravel12, React.js, InertiaJS,ShadcnUI, Pusher, TailwindCSS",
     live: "",
-    github: "https://github.com/welwelg/CashlessTransact",
-    canva: "https://www.canva.com/design/DAG6W8atlH0/irUyypK4BGC9OqWVK3bzoA/edit?utm_content=DAG6W8atlH0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton/view",
-  },
-  {
-    image: weatherapp,
-    title: "Weather App : track weather in real-time",
-    description: "React.js,Vite, Tailwind CSS, Weather API",
-    live: "https://react-weather-khaki-iota.vercel.app/",
-    github: "https://github.com/welwelg/react-Weather",
-    canva: "",
+    github: "https://github.com/welwelg/BarangayManagementSystemFinal",
+    canva: "https://www.canva.com/design/DAG71qXqQBk/vE1K_CGSX0h3C4IQhpWgIA/edit?utm_content=DAG71qXqQBk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
   },
   {
     image: coffeemenu,
@@ -43,7 +36,23 @@ const listProjects = [
     github: "",
     canva: "https://www.canva.com/design/DAG7vFaq_Mo/KRu1iSKljrHhxSgrIX1B8Q/edit?utm_content=DAG7vFaq_Mo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
   },
-  
+  {
+    image: Cashless,
+    title: "Cashless Transaction using RFID in Point of Sales",
+    description:
+      "Laravel/Blade 9, Tailwind CSS, MySQL,  JavaScript, Bootstrap, XAMPP",
+    live: "",
+    github: "https://github.com/welwelg/CashlessTransact",
+    canva: "https://www.canva.com/design/DAG6W8atlH0/irUyypK4BGC9OqWVK3bzoA/edit?utm_content=DAG6W8atlH0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton/view",
+  },
+  {
+    image: weatherapp,
+    title: "Weather App : track weather in real-time",
+    description: "React.js,Vite, Tailwind CSS, Weather API",
+    live: "https://react-weather-khaki-iota.vercel.app/",
+    github: "https://github.com/welwelg/react-Weather",
+    canva: "",
+  },
   
   
 ];
