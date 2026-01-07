@@ -67,7 +67,7 @@ export default function About() {
             I am a recent BSIT graduate majoring in Web Development,
             specializing in building full-stack applications using
             modern technologies like <span className='font-bold text-orange-500'>React</span> and <span className='font-bold text-orange-500'>Laravel</span>.
-            I am highly proficient in <span className='font-bold text-orange-500'>UI/UX </span> design tools such as <span className='font-bold text-orange-500'>Figma</span> 
+            I am highly proficient in <span className='font-bold text-orange-500'>UI/UX </span> design tools such as <span className='font-bold text-orange-500'>Figma </span> 
             and actively explore low-code platforms like <span className='font-bold text-orange-500'>Framer </span>
             and <span className='font-bold text-orange-500'>Webflow</span> to accelerate development and prototyping.
             I am a proactive learner, constantly seeking to master new technologies, frameworks, and best practices to deliver efficient,
