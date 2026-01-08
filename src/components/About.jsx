@@ -63,15 +63,14 @@ export default function About() {
             </h1>
           </header>
           
-          <p className='relative z-10 text-base leading-relaxed text-justify text-gray-300 sm:text-lg md:text-xl lg:leading-8'>
-            I am a recent BSIT graduate majoring in Web Development,
-            specializing in building full-stack applications using
-            modern technologies like <span className='font-bold text-orange-500'>React</span> and <span className='font-bold text-orange-500'>Laravel</span>.
-            I am highly proficient in <span className='font-bold text-orange-500'>UI/UX </span> design tools such as <span className='font-bold text-orange-500'>Figma </span> 
-            and actively explore low-code platforms like <span className='font-bold text-orange-500'>Framer </span>
-            and <span className='font-bold text-orange-500'>Webflow</span> to accelerate development and prototyping.
-            I am a proactive learner, constantly seeking to master new technologies, frameworks, and best practices to deliver efficient,
-            scalable, and modern digital solutions.
+            <p className='relative z-10 text-base leading-relaxed text-justify text-gray-300 sm:text-lg md:text-xl lg:leading-8'>
+            I am an innovative Full-Stack Developer & Automation Architect specializing in the
+            <span className='font-bold text-orange-500'> Laravel, React, and Inertia.js </span> ecosystem.
+            Unlike traditional developers, I bridge the gap between secure web architecture and
+            <span className='font-bold text-orange-500'> Low-Code Automation (Make.com) </span>
+            to build scalable, AI-integrated SaaS solutions. From architecting legacy migrations to engineering
+            <span className='font-bold text-orange-500'> Generative AI </span> workflows,
+            I focus on delivering secure, high-impact digital products that optimize business efficiency.
           </p>
         </article>
       </div>
