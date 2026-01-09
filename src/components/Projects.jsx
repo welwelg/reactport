@@ -4,14 +4,10 @@ import weatherapp from "/weatherapp.png";
 import coffeemenu from "/coffeemenu.png";
 import githubfinder from "/githubfinder.png";
 import brgy from "/brgy.jpg";
+import RSBPH from "/RSBPH.png";
+import GradientText from '../reactbits/GradientText';
 
-
-// ===================================
-// 1. PROJECT DATA (Structure remains the same as previous response)
-//    Ensure you set missing links to an empty string ("")
-// ===================================
 const listProjects = [
-
   {
     image: brgy,
     title: "Barangay Management System ",
@@ -40,7 +36,7 @@ const listProjects = [
     image: Cashless,
     title: "Cashless Transaction using RFID in Point of Sales",
     description:
-      "Laravel/Blade 9, Tailwind CSS, MySQL,  JavaScript, Bootstrap, XAMPP",
+      "Laravel/Blade 9, Tailwind CSS, MySQL,  JavaScript, Bootstrap, XAMPP",
     live: "",
     github: "https://github.com/welwelg/CashlessTransact",
     canva: "https://www.canva.com/design/DAG6W8atlH0/irUyypK4BGC9OqWVK3bzoA/edit?utm_content=DAG6W8atlH0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton/view",
@@ -53,12 +49,18 @@ const listProjects = [
     github: "https://github.com/welwelg/react-Weather",
     canva: "",
   },
-  
-  
+  {
+    image: RSBPH,
+    title: "Resume Builder App : create your resume online",
+    description: "NextJS, TailwindCSS, Zustand, TypeScript",
+    live: "https://resumebuilderph.vercel.app/",
+    github: "https://github.com/welwelg/ResumeBuilderPh",
+    canva: "",
+  },
 ];
 
 // ===================================
-// 2. UPDATED PROJECT CARD COMPONENT
+// PROJECT CARD COMPONENT
 // ===================================
 const ProjectCard = ({ image, title, description, live, github, canva }) => {
   const links = [
@@ -67,11 +69,11 @@ const ProjectCard = ({ image, title, description, live, github, canva }) => {
     { href: canva, text: "View in Canva", primary: true },
   ];
 
-  // Check if at least one link is available to show the buttons
   const hasLinks = links.some(link => link.href);
 
   return (
-    <article className="relative h-full max-w-sm overflow-hidden bg-white/5 border border-transparent rounded-xl shadow-lg transition-all duration-300 ease-in-out group hover:shadow-2xl hover:border-orange-500/50 hover:scale-[1.02]">
+    // Added backdrop-blur for better visibility over RippleGrid
+    <article className="relative h-full max-w-sm overflow-hidden bg-white/5 backdrop-blur-sm border border-transparent rounded-xl shadow-lg transition-all duration-300 ease-in-out group hover:shadow-2xl hover:border-orange-500/50 hover:scale-[1.02]">
       <div className="relative z-10 flex flex-col h-full">
         <figure className="relative flex-shrink-0">
           <img
@@ -83,7 +85,6 @@ const ProjectCard = ({ image, title, description, live, github, canva }) => {
             className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-4 transition-opacity duration-300 opacity-0 bg-black/70 group-hover:opacity-100"
           >
             {hasLinks ? (
-              // Case 1: Display available links
               links.map((link, index) =>
                 link.href && (
                   <a
@@ -105,7 +106,6 @@ const ProjectCard = ({ image, title, description, live, github, canva }) => {
                 )
               )
             ) : (
-              
               <p className="p-3 text-center text-white border rounded-lg bg-red-600/30 border-red-500/50">
                 No external links provided for this project.
               </p>
@@ -125,16 +125,27 @@ const ProjectCard = ({ image, title, description, live, github, canva }) => {
 };
 
 // ===================================
-// 3. PROJECTS COMPONENT (No changes needed here)
+// PROJECTS COMPONENT
 // ===================================
 export default function Projects() {
   return (
-    <main id="projects" className="p-4">
+    
+    <main id="projects" className="relative z-10 p-4 overflow-hidden">
       <section data-aos="fade-up" data-aos-delay="300">
         <header className="text-center">
-          <h1 className="mb-6 text-3xl font-bold text-white sm:text-4xl">
-            My <span className="text-orange-500">Projects</span>
+          
+          <h1 className="flex items-center justify-center mb-4">
+            <GradientText
+              colors={["#ea580c", "#fed500", "#ea580c", "#ffffff", "#f97316"]}
+              animationSpeed={5}
+              showBorder={false}
+              className="px-4 pb-4 text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+            >
+              My Projects
+            </GradientText>
           </h1>
+          
+
           <p className="max-w-2xl mx-auto mt-2 text-sm text-gray-400 sm:mt-4 sm:text-base text-balance"> 
             Explore a curated selection of projects where I've leveraged
             <span className="text-orange-500"> modern frameworks </span> and <span className="text-orange-500"> best practices </span> to solve real-world

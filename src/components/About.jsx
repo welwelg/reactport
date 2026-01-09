@@ -2,6 +2,7 @@ import React from 'react';
 import GallTilTed from '/GallTilTed.png'
 import TiltedCard from '../reactbits/TiltedCard';
 import LogoLoop from '../reactbits/LogoLoop';
+import GradientText from '../reactbits/GradientText';
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
 
 const techLogos = [
@@ -13,7 +14,7 @@ const techLogos = [
 
 export default function About() {
   return (
-    <section id='about' className='relative flex flex-col justify-between min-h-screen overflow-hidden text-white '>
+    <section id='about' className='relative z-10 flex flex-col justify-between min-h-screen overflow-hidden text-white'>
       
       {/* Main Content Container */}
       <div className="container flex flex-col items-center justify-center flex-grow gap-8 px-6 py-12 mx-auto lg:py-0 lg:grid lg:grid-cols-2 lg:gap-16 xl:gap-24 max-w-7xl">
@@ -59,7 +60,13 @@ export default function About() {
           
           <header className='relative z-10 mt-12 lg:mt-0'>
             <h1 className='mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl'>
-              About <span className='text-orange-500'>Me</span>
+              <GradientText
+              colors={["#ea580c", "#fed500", "#ea580c", "#ffffff", "#f97316"]}
+              animationSpeed={5}
+              showBorder={false}
+              className="custom-class">
+              About Me
+              </GradientText>
             </h1>
           </header>
           

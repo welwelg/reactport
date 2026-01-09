@@ -16,7 +16,7 @@ export default function Navbar() {
     <header className='fixed top-0 left-0 z-20 w-full text-white ' data-aos='fade-up' data-aos-delay='300'>
       <div className='container flex items-center justify-between p-5 mx-auto'>
         {/*LOGO*/}
-        <a href="#home" className='text-4xl italic font-bold text-white'>WelTechCode</a>
+        <a href="#home" className='text-4xl italic font-bold text-white'>WelTech<span className='text-orange-600'>Code</span></a>
 
         {/*Mobile Menu Toggle*/}
         <button className='md:hidden focus:outline-none' onClick={()=>setIsOpen(!isOpen)}>
