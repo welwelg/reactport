@@ -1,3 +1,4 @@
+![Alt](https://repobeats.axiom.co/api/embed/9165f5df4f6eb3a8d58806b2118aa2d010e27f3b.svg "Repobeats analytics image")
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
